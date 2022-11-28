@@ -1,5 +1,24 @@
 import classes from "./ProductItem.module.css";
+import { useContext } from "react";
+import CartContext from "../store/cart-Context";
+import Button from "../UI/Button";
+
 const ProductItem = (props) => {
+
+const cartCtx=useContext(CartContext)
+
+const addCartItemHandler=()=>{
+  const enteredAmount=1;
+
+  cartCtx.addItem({
+    id:props.id,
+    item:props.item,
+    src:props.src,
+    price:props.price,
+    amount:enteredAmount
+  })
+}
+
   return (
     <div className={classes.productItem}>
       <div className={classes.itemName}>{props.item}</div>
@@ -8,7 +27,7 @@ const ProductItem = (props) => {
       </div>
       <div className={classes.itemfooter}>
         <div className={classes.price}>${props.price}</div>
-        <button className={classes.itmbtn}>ADD TO CART</button>
+        <Button className={classes.itmbtn} onClick={addCartItemHandler}>ADD TO CART</Button>
       </div>
     </div>
   );

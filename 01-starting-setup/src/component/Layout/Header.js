@@ -2,7 +2,7 @@ import React from "react";
 import HeaderButton from "./HeaderButton";
 import classes from './Header.module.css';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={classes.header}>
       <ul className={classes.headerList}>
@@ -10,7 +10,7 @@ const Header = () => {
         <li><a href="#a">Store</a></li>
         <li><a href="#a">About</a></li>
       </ul>
-      <HeaderButton />
+      <HeaderButton onConfirmation={props.onShowCart} />
     </header>
   );
 };

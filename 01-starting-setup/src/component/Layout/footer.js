@@ -1,7 +1,10 @@
 import React from "react";
 import classes from './footer.module.css';
 
+
 const Footer = (props) => {
+  console.log('footer is running')
+
   return (
     <div className={classes.footer}>
    <h1>{props.Description}</h1>
@@ -14,4 +17,4 @@ const Footer = (props) => {
   );
 };
 
-export default Footer;
+export default React.memo(Footer);
