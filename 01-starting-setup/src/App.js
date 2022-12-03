@@ -10,6 +10,7 @@ import About from "./pages/About";
 import {Route} from 'react-router-dom'
 import ProductSummary from "./component/Product/ProductSummary";
 import Home from "./pages/Home";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -31,6 +32,9 @@ function App() {
       </Route>
       <Route path='/home'>
         <Home />
+      </Route>
+      <Route path='/contact'>
+        <ContactUs />
       </Route>
       <Footer Description={"The Genrics"}></Footer>
     </CartProvider>

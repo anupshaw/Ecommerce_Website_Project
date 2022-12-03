@@ -22,6 +22,11 @@ const Header = (props) => {
             About
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/contact" activeClassName={classes.active}>
+            Contact
+          </NavLink>
+        </li>
       </ul>
       <HeaderButton onConfirmation={props.onShowCart} />
     </header>
