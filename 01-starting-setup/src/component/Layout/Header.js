@@ -1,14 +1,27 @@
 import React from "react";
 import HeaderButton from "./HeaderButton";
-import classes from './Header.module.css';
+import classes from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <header className={classes.header}>
       <ul className={classes.headerList}>
-        <li><a href="#a">Home</a></li>
-        <li><a href="#a">Store</a></li>
-        <li><a href="#a">About</a></li>
+        <li>
+          <NavLink to="/home" activeClassName={classes.active}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/" exact activeClassName={classes.active}>
+            Store
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" activeClassName={classes.active}>
+            About
+          </NavLink>
+        </li>
       </ul>
       <HeaderButton onConfirmation={props.onShowCart} />
     </header>

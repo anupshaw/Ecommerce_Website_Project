@@ -1,48 +1,15 @@
 import Header from "./component/Layout/Header";
-import ProductSummary from "./component/Product/ProductSummary";
-import Products from "./component/Product/Products";
+
+// import Products from "./component/Product/Products";
 import Footer from "./component/Layout/footer";
 import Cart from "./component/Cart/Cart";
 import { useState } from "react";
 import CartProvider from "./component/store/cart-Provider";
-
-const productsArr = [
-  {
-    id: Math.random(),
-    title: "Colors",
-
-    price: 100,
-
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
-  },
-
-  {
-    id: Math.random(),
-    title: "Black and white Colors",
-
-    price: 50,
-
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
-  },
-
-  {
-    id: Math.random(),
-    title: "Yellow and Black Colors",
-
-    price: 70,
-
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
-  },
-
-  {
-    id: Math.random(),
-    title: "Blue Color",
-
-    price: 100,
-
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
-  },
-];
+import  Store from "./pages/Store";
+import About from "./pages/About";
+import {Route} from 'react-router-dom'
+import ProductSummary from "./component/Product/ProductSummary";
+import Home from "./pages/Home";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -55,9 +22,16 @@ function App() {
     <CartProvider>
       <Header onShowCart={showCartHandler} />
       {cartIsShown && <Cart />}
-      <ProductSummary />
-      <Products category={"Music"} items={productsArr} />
-      <Products category={'Merch'} items={productsArr} />
+    <ProductSummary />
+      <Route path='/' exact>
+        <Store />
+      </Route>
+      <Route path='/about'>
+        <About />
+      </Route>
+      <Route path='/home'>
+        <Home />
+      </Route>
       <Footer Description={"The Genrics"}></Footer>
     </CartProvider>
   );

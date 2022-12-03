@@ -19,7 +19,7 @@ const numberOfCartItems=items.reduce((currValue,item)=>{
   return (
     <Button className={classes.HeaderButton} onClick={props.onConfirmation}>
       <h1>Cart</h1>
-      <div>{numberOfCartItems}</div>
+      <span>{numberOfCartItems}</span>
     </Button>
   );
 };

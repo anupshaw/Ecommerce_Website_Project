@@ -2,6 +2,7 @@ import React from "react";
 import classes from './footer.module.css';
 
 
+
 const Footer = (props) => {
   console.log('footer is running')
 
@@ -9,9 +10,9 @@ const Footer = (props) => {
     <div className={classes.footer}>
    <h1>{props.Description}</h1>
   <ul className={classes.footerlist}>
-    <li><a href="https://www.youtube.com/">U tube</a></li>
-    <li><a href="https://open.spotify.com/">Spotify</a></li>
-    <li><a href="https://www.facebook.com/">facebook</a></li>
+    <li><a href="https://www.youtube.com/"><i className="fa fa-youtube-play" ></i></a></li>
+    <li><a href="https://open.spotify.com/"><i className="fa fa-spotify" ></i></a></li>
+    <li><a href="https://www.facebook.com/"><i className="fa fa-facebook-f"></i></a></li>
   </ul>
    </div>
   );

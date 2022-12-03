@@ -1,0 +1,25 @@
+.About{
+    background-color: white;
+}
+.about{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.aboutHeading{
+    margin-top: 0px;
+}
+
+/* .imgPara{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.imgPara img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

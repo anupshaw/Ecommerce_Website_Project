@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: aqua;
 }
 
 .footerlist{
@@ -15,3 +16,14 @@
 .footerlist li{
     margin: 0px 4px;
 }
+
+
+.fa fa-youtube-play{
+    color: red;
+    font-size: 30px;
+}
+
+/* i.fa fa-youtube-play::after{
+    color: red;
+    font-size: 30px;
+} */
