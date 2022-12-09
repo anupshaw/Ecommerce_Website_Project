@@ -3,13 +3,13 @@ import classes from "./Cart.module.css";
 import { useContext } from "react";
 import CartContext from "../store/cart-Context";
 import Button from "../UI/Button";
-console.log("Hi");
+import CartModal from "../UI/CartModal";
 
 const Cart = () => {
   const cartCtx = useContext(CartContext);
 
   return (
-    <div className={classes.cart}>
+    <CartModal className={classes.cart}>
       <h1>Cart</h1>
       <table>
         <thead>
@@ -34,13 +34,14 @@ const Cart = () => {
         <tfoot>
           <tr>
             <td colSpan={3}>
-              Total ${cartCtx.totalamount}<br />
+              Total ${cartCtx.totalamount}
+              <br />
               <Button>PURCHASE</Button>
             </td>
           </tr>
         </tfoot>
       </table>
-    </div>
+    </CartModal>
   );
 };
 

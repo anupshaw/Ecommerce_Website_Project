@@ -4,6 +4,7 @@
   background-color: black;
   justify-content: center;
   align-items: center;
+  height: 80px;
 }
 
 .header ul {
@@ -28,8 +29,39 @@
 
 .headerList li:hover
 {
-    width: 100px;
+    /* width: 100px; */
+    transform:scaleX(1.1);
 }
+
+.authLogin{
+  position: absolute;
+  right: 100px;
+  font-size: 30px;
+  border-bottom:none;
+  outline:none ;
+  color: red;
+  z-index: 100;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logOutbtn{
+  position: absolute;
+  left: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 6px 20px;
+  font-weight: 900;
+  font-size: 20px;
+  background-color: #9f5ccc;
+  color: white;
+}
+
+
+
 .headerList li a:hover,
 .headerList li a:active,
 .active{
@@ -37,4 +69,10 @@
     border-bottom: 2px brown solid;
     
 }
+
+
+.logOutbtn:hover {
+  background-color: #873abb;
+}
+
 

@@ -18,12 +18,22 @@
 }
 
 
-.fa fa-youtube-play{
-    color: red;
+i{
     font-size: 30px;
 }
 
-/* i.fa fa-youtube-play::after{
+.footerlist li:first-child a i{
     color: red;
-    font-size: 30px;
-} */
+}
+
+
+.footerlist li:nth-child(2) a i{
+    color: #1DB954;
+}
+
+.footerlist li:nth-child(3) a i{
+    color:#4267B2;
+}
+
+
+

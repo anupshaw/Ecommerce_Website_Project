@@ -8,7 +8,8 @@ const About = () => {
         <img
           src="https://prasadyash2411.github.io/ecom-website/img/Band%20Members.png"
           alt="aboutImage"
-        ></img><span className={classes.aboutDesc}>
+        ></img>
+        <p className={classes.aboutDesc}>
           Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
           sorrows, hates no prosecutors will unfold in the enduring of which
           were born in it? Often leads smallest mistake some pain main
@@ -30,7 +31,7 @@ const About = () => {
           often one of us, however, have any! Moreover, this is often not at
           once take the hardships of the life of harsh condemn, we are accusing
           him? Him whom something large cisterns.
-        </span>
+        </p>
       </div>
     </div>
     </div>

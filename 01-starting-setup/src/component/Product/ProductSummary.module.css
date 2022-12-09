@@ -1,6 +1,7 @@
 .Summary {
   background-color: gray;
-  padding-bottom: 0.1px;
+  /* padding-bottom: 0.1px; */
+  margin-bottom: 0px;
 }
 
 .Summary p {
@@ -8,4 +9,5 @@
   color: white;
   font-size: 6vw ;
   margin-top: 0px;
+  margin-bottom: 0px;
 }

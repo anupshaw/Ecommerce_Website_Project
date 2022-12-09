@@ -5,7 +5,6 @@ import ProductItem from "./ProductItem";
 
 
 const Products = (props) => {
-  console.log('Product is running')
   return (
     <div className={classes.product}>
       <div className={classes.Category}>
